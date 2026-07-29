@@ -1,0 +1,27 @@
+{
+  "dataset": "F-dataset",
+  "outer_fold": 1,
+  "outer_folds": 10,
+  "split_seed": 1234,
+  "validation_strategy": "rotating_outer_fold",
+  "validation_fold": 2,
+  "validation_ratio": 0.1,
+  "num_drugs": 592,
+  "num_diseases": 313,
+  "complete_positive_pairs": 1930,
+  "train_positive_pairs": 1549,
+  "validation_positive_pairs": 192,
+  "test_positive_pairs": 189,
+  "zero_degree_drugs_in_train": 43,
+  "zero_degree_diseases_in_train": 20,
+  "drug_gip_gamma": 0.38218205293737895,
+  "disease_gip_gamma": 0.20206584893479665,
+  "sha256": {
+    "train": "b38a50a5399b8b9c201c6dd1628ed401ce55252c0c2b00c0865c6be293524615",
+    "validation": "faacfef7966db1faa26eed6c690234bbda2ac26c0a7c0c827077517f9b78f635",
+    "test": "ab67a5bd55cff572875b0c8450938169040bcbdf53c713df99b796cb3c76d77e",
+    "adjacency": "a42c81ea88955532643eb62827da1b67fea3bb806ab613093e40b678eae6c7d5",
+    "drug_gip": "0cf8dc59991333d4984e81c916d74597093deb0c750e2af031ddd51679444d35",
+    "disease_gip": "0dbb5e0c77d4066f68cc8a6fdf746ebc0d6a6a78e862998c61d84ada37d850a4"
+  }
+}

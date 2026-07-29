@@ -1,0 +1,31 @@
+{
+  "dataset": "F-dataset",
+  "outer_fold": 8,
+  "protocol": "refit_after_inner_validation",
+  "training_sources": [
+    "selection_train",
+    "selection_validation"
+  ],
+  "threshold_source": "selection_validation_f1",
+  "gip_source": "refit_training_associations_only",
+  "num_drugs": 592,
+  "num_diseases": 313,
+  "complete_positive_pairs": 1930,
+  "selection_train_positive_pairs": 1515,
+  "selection_validation_positive_pairs": 213,
+  "refit_train_positive_pairs": 1728,
+  "test_positive_pairs": 202,
+  "refit_train_ratio": 0.8953367875647669,
+  "test_ratio": 0.10466321243523316,
+  "drug_gip_gamma": 0.3425925925925926,
+  "disease_gip_gamma": 0.18113425925925927,
+  "selection_manifest_sha256": "fe63b46c3dfae822d6fea87cd2a22bf17382d3d8b6dfff73adb08e70628130f7",
+  "sha256": {
+    "train": "552e2aaf56c341b07e67029b12b7cdcc5533ccddb01c01e31fafcb17142a3790",
+    "validation": "af7128710647796e30fb8542a56898281be79ba8fb6f25aa536abd950c890336",
+    "test": "1fdbd93409cd744aadcdb4dc46bf3601b7e45daab294954305ca92e0d2128934",
+    "adjacency": "582547b11764bb6d8449a40e9aa5f5f8276e59a4b1c15ca3f47b9e8631d8d2fc",
+    "drug_gip": "e76feb3ac15c504f310b19ed04dad3ec03f4340d9b7e4e6f565403da21cf78c3",
+    "disease_gip": "322bfbaafcd951bb3ea19587e948856c2fb4c83db962496719ee159aac201200"
+  }
+}

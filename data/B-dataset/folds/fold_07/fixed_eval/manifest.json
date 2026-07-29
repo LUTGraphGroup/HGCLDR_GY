@@ -1,0 +1,36 @@
+{
+  "dataset": "B-dataset",
+  "outer_fold": 7,
+  "protocol": "versioned_fixed_evaluation_pairs",
+  "source_run_tag": "main_none",
+  "source_result_dir": "D:\\codecenter\\HGCLDR-re\\0722\\main_none\\B-dataset\\fold_07",
+  "pair_format": "drug index and globally offset disease node index",
+  "selection_and_refit_reuse_identical_pairs": true,
+  "validation_test_negative_overlap": 0,
+  "splits": {
+    "validation": {
+      "pairs": 3668,
+      "positives": 1834,
+      "negatives": 1834,
+      "pairs_sha256": "0e60329ae58996a664fb2c6d009ffd1e59526a47a1bebb0cfd13a6efc4e3f3a7",
+      "labels_sha256": "2333d499e8926425c1c662980bf9d44cb8e7c3970d9f051e6d88594099ab352a",
+      "negative_pairs_sha256": "f04c52e20b96a720a94e39bfac259e8ebf8ec53bcd1882a23d36dfe3128620aa"
+    },
+    "test": {
+      "pairs": 3682,
+      "positives": 1841,
+      "negatives": 1841,
+      "pairs_sha256": "6a6330110fd3be6dba147caafe5eeb41eed8303fe85c40483bd75f222447c094",
+      "labels_sha256": "4e8e9578a2604a7911ca7f0996fb6508123ef336aa6aacd8b34d5b19035815a0",
+      "negative_pairs_sha256": "93940c787c891dd6d43548f1a8d432ec621f58135ac47d5d0afcc0883cadf82b"
+    }
+  },
+  "source_prediction_sha256": {
+    "validation": "93952c981185ef95cc055ccb958e5540904dfb8ff32a453f91872f07c87034a3",
+    "test": "3e4b86efa459628c161f661264ed31ee3bc284bad6622bc3cbf500e5c077aa80"
+  },
+  "output_file_sha256": {
+    "validation": "87a576fb1cd3c365d0ab2ca5673bd4867afe8f25ca8d87d303bd03168591dae8",
+    "test": "175c61452670468c2a59db1039ef88a7385ccfea225b577b7bb9f5c76b5bc11a"
+  }
+}

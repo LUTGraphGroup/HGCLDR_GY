@@ -1,0 +1,25 @@
+﻿# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Server-generated artifacts (archive separately after a run)
+results/
+server-logs/
+log-files/
+*.log
+*.out
+
+# Local checkpoints outside versioned result archives
+checkpoints/

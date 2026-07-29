@@ -1,0 +1,113 @@
+{
+  "dataset": "B-dataset",
+  "fold": 8,
+  "selection_metric": "validation_aupr",
+  "threshold_source": "versioned_fixed_validation_f1",
+  "best_epoch": 1080,
+  "locked_threshold": -0.40302205085754395,
+  "training_protocol": {
+    "name": "inner_validation_then_outer_refit",
+    "selection_split_path": "/hy-tmp/HGCLDR-maincode/data/B-dataset/folds/fold_08",
+    "final_split_path": "/hy-tmp/HGCLDR-maincode/data/B-dataset/folds/fold_08/refit",
+    "selection_train_positive_pairs": 14737,
+    "selection_validation_positive_pairs": 1839,
+    "final_train_positive_pairs": 16576,
+    "final_training_epochs": 1080,
+    "gip_source": "final_training_associations_only",
+    "selection_manifest_sha256": "738194fad06a38f2e3ab1131f55f5d2a5c7ab67cbc1a8e2facba78253457ad41",
+    "final_manifest_sha256": "e08692bcefd7f15f5da5dabf76cc27ccabd32bc2103a47ac08be0da1b10d0795",
+    "selection_gip_source": "selection_training_associations_only",
+    "final_gip_source": "final_training_associations_only"
+  },
+  "pseudo_supervision": {
+    "mode": "none",
+    "fraction": 0.2,
+    "confidence_threshold": 0.0,
+    "selection_available_candidates": 9868,
+    "final_available_candidates": 9754,
+    "candidate_source": "training-only projection with held-out masking"
+  },
+  "protein_projection_sources": {
+    "dataset": "B-dataset",
+    "drug_protein_path": "/hy-tmp/HGCLDR-maincode/data/B-dataset/DrugProteinAssociationNumber.csv",
+    "protein_disease_path": "/hy-tmp/HGCLDR-maincode/data/B-dataset/ProteinDiseaseAssociationNumber.csv",
+    "drug_protein_env_override": false,
+    "protein_disease_env_override": false
+  },
+  "validation": {
+    "auc": 0.9529613494815519,
+    "aupr": 0.9588642156489253,
+    "accuracy": 0.8928765633496466,
+    "precision": 0.9025069637883009,
+    "recall": 0.8809135399673735,
+    "f1": 0.89157952669235,
+    "mcc": 0.7859781277397506,
+    "threshold": -0.40302205085754395
+  },
+  "effective_environment": {
+    "PROJ_WEIGHT": "0.9",
+    "PROJ_ALPHA_METHOD": "adaptive",
+    "PROJ_ALPHA_Q90": "0.8",
+    "PROJ_ALPHA_Q50": "0.5",
+    "PROJ_ALPHA_Q10": "0.2",
+    "PROJ_NORM_METHOD": "bidirectional",
+    "PROJ_GATE_LAMBDA": "0.5",
+    "PROJ_SUP_METHOD": "k_support",
+    "PROJ_MIN_SUP": "2",
+    "PROJ_MAX_SUP": "40",
+    "CONSIST_GATE": "1",
+    "CONSIST_NEI": "10",
+    "CONSIST_THR": "0.6",
+    "PROJ_LGCN_K": "3",
+    "PROJ_LGCN_TOPK": "40",
+    "PROJ_LGCN_BETA": "0.75",
+    "SIM_AUG_ENABLE": "1",
+    "SIM_AUG_TOPK": "40",
+    "SIM_AUG_WEIGHT": "0.3",
+    "SIM_AUG_THRESHOLD": "0.0",
+    "SSL_USE_MSG": "1",
+    "SSL_P_OBS": "0.6",
+    "SSL_DEG_SAFE": "1",
+    "SIM_TOPK": "40",
+    "SIM_DROP_SELF": "1",
+    "EMA_DECAY": "0.999"
+  },
+  "negative_sampling": {
+    "training_negatives_per_positive": 8,
+    "training_strategy": "dynamic hard-negative sampling",
+    "evaluation_negatives_per_positive": 1,
+    "evaluation_strategy": "versioned fixed fold pairs",
+    "validation_test_negative_overlap": 0,
+    "validation_negative_count": 1839,
+    "test_negative_count": 1834,
+    "validation_negative_sha256": "af6c4f6ebd87a1e6d0661a611335c975e9dc9f2f7ac06dfad10c4b22909e8319",
+    "test_negative_sha256": "07237b2fca73a62239873650c81612edbd246a865087cd2db16df889e7328955",
+    "fixed_eval_manifest_sha256": "b63da8005bfec027507ea7bf4a27533511890eccc216a3ea10d95859252fbfb5"
+  },
+  "test": {
+    "auc": 0.9465130058783026,
+    "aupr": 0.9479875155475358,
+    "accuracy": 0.8754089422028354,
+    "precision": 0.8719611021069692,
+    "recall": 0.8800436205016358,
+    "f1": 0.8759837177747626,
+    "mcc": 0.7508501419854989,
+    "threshold": -0.40302205085754395
+  },
+  "seeds": {
+    "training": 1234,
+    "refit_training": 1002034,
+    "subgraph_strategy": "seed + phase_offset + epoch*100000 + view",
+    "sampler_strategy": "explicit numpy Generator seed per phase",
+    "validation_negative_sampling": 2035,
+    "test_negative_sampling": 2036
+  },
+  "rescore_provenance": {
+    "source_result_dir": "/hy-tmp/HGCLDR-maincode/results/refit_none_v1/B-dataset/fold_08",
+    "source_metrics_sha256": "1ae18e72ec9feac101b6687e19f931d52b141283dcc2688607a51da54adf9f0a",
+    "source_locked_threshold": -0.40302205085754395,
+    "source_test_negative_sha256": "a62f0e5bbf17fc764da485739900f5ad5bd4f982cd10d10a30c02a5f5198e81a",
+    "training_reused_without_update": true,
+    "rescored_validation_and_test": true
+  }
+}
